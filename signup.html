@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<title>Employee table</title>
+</head>
+<style >
+	body{
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQiorhjwazWRkRA28wXdXQSdu9O5MUtosp4XA&usqp=CAU");
+		background-color: #cccccc;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		margin-top: 4rem;
+		flex-direction: column;
+		align-items: center;
+	}
+</style>
+<body> 
+<form action="/addmember" method="post" > {% csrf_token %}
+	<label for="first_name">first name:</label><br>
+	<input type="text" name="first_name" placeholder="enter ur name" required><br>
+	<label for="last_name">last name:</label><br>
+	<input type="text" name="last_name" placeholder="enter ur lastname" required><br>
+	<label for="email">email:</label><br>
+	<input type="email" name="email" placeholder="enter ur email" required><br>
+	<label for="password" >password:</label><br>
+	<input type="password" name="password" required><br>
+	<label for="dob" >dob:</label><br>
+	<input type="date" name="dob" required><br><br>
+	<input type="submit" value="submit">
+</form>
+</body>
+
+</html>
