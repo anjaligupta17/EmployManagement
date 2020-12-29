@@ -1,2 +1,2 @@
 # EmployManagement
-Emploment management system in which add employ,logout ,update,login 
+Employment management system in which add employ,logout ,update,login 
